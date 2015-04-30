@@ -64,8 +64,8 @@
 				<div class="controls">
 					<fieldset id="type">
 						<input type="radio" id="type_all" name="type" value="all" checked="checked"/><label for="type_all" class="sel"><span class="all">All Traffic</span></label>
-						<input type="radio" id="type_pc" name="type" value="pc"/><label for="type_pc"><span class="pc">Computer</span></label>
-						<input type="radio" id="type_mob" name="type" value="mob"/><label for="type_mob"><span class="mob">Mobile</span></label>
+						<input type="radio" id="type_fall" name="type" value="fall"/><label for="type_fall"><span class="fall">Fall</span></label>
+						<input type="radio" id="type_spring" name="type" value="spring"/><label for="type_spring"><span class="spring">Spring</span></label>
 					</fieldset>
 					<fieldset id="state">
 						<input type="radio" id="state_all" name="state" value="all" checked="checked"/><label id="state_all_label" for="state_all" class="sel"><span class="all">All States</span></label>
@@ -84,8 +84,8 @@
 				<div id="pc2mob">
 					<div class="svg"></div>
 					<ul>
-						<li class="pc"><span>82%</span> Fall</li>
-						<li class="mob"><span>18%</span> Spring</li>
+						<li class="fall"><span>82%</span> Fall</li>
+						<li class="spring"><span>18%</span> Spring</li>
 					</ul>
 				</div>
 				<div id="hourly_values">
@@ -93,9 +93,6 @@
 					<p class="subtitle">All traffic daily</p>
 				</div>
 			</div>
-			<div id="footer">Based on traffic on <a href="http://trulia.com">Trulia.com</a> and <a href="http://www.trulia.com/mobile/iphone/">Trulia Mobile</a> between June and August 2011. "Computer" traffic includes all house hunting activity coming from desktops and laptop computers while "Mobile" includes app and mobile web traffic from cell phones and tablets. Times are normalized for their respective timezones.</div>
-		
-		</div>
 	</body>
 	<script src="jquery-1.6.2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.11/d3.min.js"></script>
