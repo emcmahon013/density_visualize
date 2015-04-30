@@ -36,15 +36,36 @@ def daterange(start_date, end_date):
   for n in range(int ((end_date - start_date).days)):
     yield start_date + datetime.timedelta(n)
 
-def write_to_json(result, building_list):
-  f = open('workfile', 'w+')
+def write_to_json(all_normalized_density, result, building_list):
+  f = open('data.json', 'w+')
   f.write('{')
-  aaa = 0
-  for buliding_info, library in zip(building_list, result):
-    if (aaa!=0):
+  
+  f.write('\n\t"all":{')
+  f.write('\n\t\t"pc2mob": 4.46,')
+  f.write('\n\t\t"views": [')
+
+  rows, colomns =  all_normalized_density.shape
+  for i in xrange(0, rows):
+    if (i!=0):
       f.write(',')
-    aaa=1
-    f.write('\n\t"'+ str(building_list[str(buliding_info)]) +'":{')
+    f.write('\n\t\t\t[')
+    for j in xrange(0, colomns):
+      if (j!=0):
+        f.write(',')
+      f.write('\n\t\t\t\t{')
+      f.write('\n\t\t\t\t\t"fall": ' + str(all_normalized_density[i,j]) + ',')
+      f.write('\n\t\t\t\t\t"spring": ' + str(all_normalized_density[i,j]))
+      f.write('\n\t\t\t\t}')
+
+    f.write('\n\t\t\t]')
+  f.write('\n\t\t]')
+  f.write('\n\t}')
+
+
+  for buliding_info, library in zip(building_list, result):
+    print buliding_info
+    f.write(',')
+    f.write('\n\t"B'+ str(building_list[str(buliding_info)]) +'":{')
     f.write('\n\t\t"pc2mob": 4.46,')
     f.write('\n\t\t"views": [')
 
@@ -57,11 +78,12 @@ def write_to_json(result, building_list):
         if (j!=0):
           f.write(',')
         f.write('\n\t\t\t\t{')
-        f.write('\n\t\t\t\t\t"sep": ' + str(library[i,j]) + ',')
-        f.write('\n\t\t\t\t\t"oct": ' + str(library[i,j]))
+        f.write('\n\t\t\t\t\t"fall": ' + str(library[i,j]) + ',')
+        f.write('\n\t\t\t\t\t"spring": ' + str(library[i,j]))
         f.write('\n\t\t\t\t}')
 
       f.write('\n\t\t\t]')
+
 
 
     f.write('\n\t\t]')
