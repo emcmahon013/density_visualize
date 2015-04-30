@@ -1,5 +1,6 @@
 import json, requests
 import datetime
+import numpy as np
 
 def get_building_info():
   url = 'http://density.adicu.com/docs/building_info'
@@ -38,8 +39,32 @@ def daterange(start_date, end_date):
 def write_to_json(result, building_list):
   f = open('workfile', 'w+')
   f.write('{')
-  for key, value, library in zip(building_list.iteritems(), result):
-    print library[0,0]
-    f.write('"'+ str(buliding_info) +'"')
-  f.write('}')
+  aaa = 0
+  for buliding_info, library in zip(building_list, result):
+    if (aaa!=0):
+      f.write(',')
+    aaa=1
+    f.write('\n\t"'+ str(building_list[str(buliding_info)]) +'":{')
+    f.write('\n\t\t"pc2mob": 4.46,')
+    f.write('\n\t\t"views": [')
+
+    rows, colomns =  library.shape
+    for i in xrange(0, rows):
+      if (i!=0):
+        f.write(',')
+      f.write('\n\t\t\t[')
+      for j in xrange(0, colomns):
+        if (j!=0):
+          f.write(',')
+        f.write('\n\t\t\t\t{')
+        f.write('\n\t\t\t\t\t"sep": ' + str(library[i,j]) + ',')
+        f.write('\n\t\t\t\t\t"oct": ' + str(library[i,j]))
+        f.write('\n\t\t\t\t}')
+
+      f.write('\n\t\t\t]')
+
+
+    f.write('\n\t\t]')
+    f.write('\n\t}')
+  f.write('\n}')
   f.close()

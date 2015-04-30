@@ -30,7 +30,7 @@ for key, value in building_info.iteritems():
   normalized_density = density / density_count
 
   result.append(normalized_density)
-  break
+  #break
 write_to_json(result, building_info)
 
 #  np.savetxt("foo.csv", normalized_density, delimiter=",")
