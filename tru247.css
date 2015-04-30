@@ -75,7 +75,7 @@ fieldset#type {
 }
 
 #tiles {
-	font-size: 12px;
+	font-size: 10px;
 	clear: both;
 }
 
@@ -102,8 +102,8 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 }
 
 #tiles .tile {
-	width: 38px;
-	height: 38px;
+	width: 30px;
+	height: 30px;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
 	-webkit-transition: 0.7s;
@@ -112,8 +112,8 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 .face {
 	position: absolute;
 	-webkit-backface-visibility: hidden;
-	width: 36px;
-	height: 36px;
+	width: 30px;
+	height: 30px;
 	background: #eee;
 	border: 1px solid white;
 	-moz-border-radius: 4px;
