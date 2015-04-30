@@ -4,25 +4,34 @@ from density_includes import *
 import json, requests
 import numpy as np
 
-#build_info = get_building_info()
-
-#http://density.adicu.com/window/2014-10-10T08:00/2014-10-10T21:30/group/147?auth_token=9O4CRZLWI0OFZII4S4HYZNC60OZIZ3CB
-
-get_day_of_week("2015-04-30")
+building_info = get_building_info()
 
 density = np.zeros((7, 24))
 density_count = np.zeros((7, 24))
+normalized_density = np.zeros((7, 24))
 
-for single_date in daterange("2014-10-10", "2014-10-12"):
-	url = get_json_url(single_date, "00:00", single_date, "23:59", 130)
-	print url
+result = list()
 
+for key, value in building_info.iteritems():
+  print "processing " , key, value
 
-#print density
-#url = 'http://density.adicu.com/latest?auth_token=9O4CRZLWI0OFZII4S4HYZNC60OZIZ3CB'
+  for single_date in daterange("2014-09-01", "2014-10-01"):
+    url = get_json_url(single_date, "00:00", single_date, "23:59", int(value))
+    resp = requests.get(url=url)
+    data = json.loads(resp.text)
 
-#resp = requests.get(url=url)
-#data = json.loads(resp.text)
+    day = get_day_of_week(str(single_date))
+    for i in xrange(0, len(data["data"])):
+      curr_time = data["data"][i]["dump_time"]
+      curr_time = int(curr_time[11:13])
+      density[day, curr_time] += float(data["data"][i]["percent_full"] )
+      density_count[day, curr_time] += 1
+        #print  data["data"][i]["percent_full"] 
+  normalized_density = density / density_count
 
-#for i in xrange(0, len(data["data"])):
-#  print  data["data"][i]["parent_name"]
+  result.append(normalized_density)
+  break
+write_to_json(result, building_info)
+
+#  np.savetxt("foo.csv", normalized_density, delimiter=",")
+# url = 'http://density.adicu.com/latest?auth_token=9O4CRZLWI0OFZII4S4HYZNC60OZIZ3CB'

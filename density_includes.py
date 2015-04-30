@@ -23,7 +23,7 @@ def get_day_of_week(date):
   tks = [int(i) for i in date.split("-")]
   ans = datetime.date(tks[0], tks[1], tks[2])
 
-  return ans.strftime("%w") #%A
+  return int(ans.strftime("%w"))-1 #%A
 
 def daterange(start_date, end_date):
   tks = [int(i) for i in start_date.split("-")]
@@ -35,3 +35,11 @@ def daterange(start_date, end_date):
   for n in range(int ((end_date - start_date).days)):
     yield start_date + datetime.timedelta(n)
 
+def write_to_json(result, building_list):
+  f = open('workfile', 'w+')
+  f.write('{')
+  for key, value, library in zip(building_list.iteritems(), result):
+    print library[0,0]
+    f.write('"'+ str(buliding_info) +'"')
+  f.write('}')
+  f.close()
