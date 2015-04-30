@@ -90,7 +90,7 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 }  
 
 #tiles tr th {
-	padding-top: 12px;
+	padding-top: 10px;
 }
 
 #tiles tr:first-child th {
@@ -430,7 +430,7 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 
 h2 {
 	margin-top: -2px;
-	font-size: 28px;
+	font-size: 20px;
 	line-height: 28px;
 	margin-bottom: 30px;
 	width: 250px;
@@ -440,7 +440,7 @@ h2 {
 }
 
 p.subtitle {
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 19px;
 	padding-top: 2px;
 	color: #999;
