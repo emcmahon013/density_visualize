@@ -14,7 +14,7 @@
 			</g>
 	<g id="low">
 		<path id="low" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="
-			M330 200 V 240 H 340 L 345 245 V 253 H 382 V 245 L 387 240 H 397 V 200 H 387 L 382 195 V 182 H 345 V 195 L 340 Z"/>
+			M330 200 V 240 H 340 L 345 245 V 253 H 382 V 245 L 387 240 H 397 V 200 H 387 L 382 195 V 182 H 345 V 195 L 340 200 Z"/>
 	</g>
 	<g id="NWC">
 		<path id="sci" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="
