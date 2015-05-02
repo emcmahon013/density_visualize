@@ -566,7 +566,7 @@ function createMap() {
 		.attr('height', 202);
 	
 	var g = svg.append('svg:g')
-		.attr('transform', 'scale(0.5) translate(-27, -134)');
+		.attr('transform', 'scale(0.5) translate(-27, -134) rotate(90)');
 	
 	for (s = 0; s < mapSVG.states.length; s++ ) {
 		var state = mapSVG.states[s];
