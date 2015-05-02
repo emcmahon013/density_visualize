@@ -10,8 +10,8 @@ if (!('map' in Array.prototype)) {
 };
 
 var mapSVG = {
-	states: ['campus','B131', 'B130', 'B85', 'B134', 'B133', 'B132', 'B155', 'B139', 'B140', 'B23', 'B145', 'B148', 'B149', 'B147', 'B144', 'B125', 'B138', 'B153', 'B154', 'B150', 'B151', 'B152'],
-	campus: "M330 200 V 240 H 340 L 345 245 V 253 H 382 V 245 L 387 240 H 397 V 200 H 387 L 382 195 V 182 H 345 V 195 L 340 200 Z",
+	states: ['all','avery','butler','johnjay','lerner','low','B131', 'B130', 'B85', 'B134', 'B133', 'B132', 'B155', 'B139', 'B140', 'B23', 'B145', 'B148', 'B149', 'B147', 'B144', 'B125', 'B138', 'B153', 'B154', 'B150', 'B151', 'B152'],
+	all: "M240 5 V 500 H 490 V 295 H 515 V 315 H 665 V 160 H 515 V 230 H 490 V 5 Z ",
 	avery:"M420 148 V 200 H 442 V 148 Z",
 	butler:"M 320 500 V 445 H 340 V 440 H 387 V 445 H 405 V 500Z",
 	johnjay:"M420 500 V 472 H 445 V 469 H 465 V 472 H 490 V 500 H 475 V 495 H 435 V 500Z",
@@ -562,11 +562,11 @@ function selectHourlyChartBar(hour) {
 
 function createMap() {
 	var svg = d3.select("#map").append('svg:svg')
-		.attr('width', 320)
-		.attr('height', 202);
+		.attr('width', 900)
+		.attr('height', 1200);
 	
 	var g = svg.append('svg:g')
-		.attr('transform', 'scale(0.5) translate(-27, -134)');
+		.attr('transform', 'scale(0.5) translate(550, -200) rotate(90)');
 	
 	for (s = 0; s < mapSVG.states.length; s++ ) {
 		var state = mapSVG.states[s];
