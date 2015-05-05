@@ -182,7 +182,7 @@ d3.json('sep.json', function(json) {
 		reColorTiles('all', type);
 		drawMobilePie('all');
 		
-		d3.select('#wtf h2').html('All States');
+		d3.select('#wtf h2').html('All Buildings');
 	});
 	
 	/* ************************** */
