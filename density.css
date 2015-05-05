@@ -32,7 +32,7 @@
 
 #controls span {
 	float: left;
-	width: 100px;
+	width: 10px;
 	clear: left;
 }
 
@@ -234,7 +234,7 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 }
 
 #wtf {
-	float: center;
+	float: right;
 	width: 515px;
 }
 
