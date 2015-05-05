@@ -27,12 +27,12 @@
 }
 
 #controls fieldset {
-	width: 100px;
+	width: 250px;
 }
 
 #controls span {
 	float: left;
-	width: 100px;
+	width: 120px;
 	clear: left;
 }
 
@@ -45,7 +45,7 @@ fieldset#state label, fieldset#state input {
 }
 
 fieldset#state.ff3 {
-	width: 300px;
+	width: 500px;
 }
 
 fieldset#state.ff3 label {
@@ -53,7 +53,7 @@ fieldset#state.ff3 label {
 }
 
 fieldset#type {
-	margin-right: 10px;
+	margin-right: 49px;
 	float: left;
 }
 
@@ -158,7 +158,7 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 
 #map {
 	float: left;
-	width: 300px;
+	width: 320px;
 	height: 202px;
 	margin-bottom: 15px;
 }
@@ -224,7 +224,7 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 }
 
 #states_nav {
-	width: 350px;
+	width: 400px;
 	float: left;
 	margin-left: 20px;
 }
@@ -247,7 +247,6 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 
 #pc2mob {
 	float: left;
-	margin-left:100px;
 }
 
 #pc2mob path {
