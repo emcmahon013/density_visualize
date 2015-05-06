@@ -4,22 +4,17 @@
 <!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		
-		<meta property="og:site_name" content="Trulia Insights"/>
-		<meta property="og:type" content="article"/>
-		<meta property="og:title" content="House Hunting All Day, Every Day"/>
-		<meta property="og:url" content="http://insights.truliablog.com/vis/tru247/"/>
-		<meta property="og:description" content="Most people search for homes on Mondays at 9:00 PM. When are you window shopping?"/>
+		<meta property="og:title" content="Density: Visualized"/>
+		<meta property="og:description" content="Density estimates how full study spaces are on campus, using a live feed of Wi-Fi access data that updates every 15 minutes."/>
 		
-		<!-- Design and code by Joe Golike @golike for Trulia.com -->
-		
-		<title>House Hunting All Day, Every Day - Trulia Insights</title>
-		<link rel="stylesheet" media="all" href="tru247.css"/>
+		<title>Density</title>
+		<link rel="stylesheet" media="all" href="density.css"/>
 		
 		<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="ie.css?v=1.0"/>
@@ -28,14 +23,25 @@
 	
 	</head>
 	<body>
-		<div id="truliaBar"><a href="/">Back to Trulia Insights</a></div>
+  		<div class="wrapper">
+    	<div class="content">
+      
+		<div class="logoContainer">
+    	<div class="container">
+        	<div class="text-center">
+            <img class="logo" src="http://density.adicu.com/static/img/logo.svg">
+        </div>
+    </div>
+</div>
+<div class="textContainer">
+    <div class="container">
+        <div>
 		<div id="container">
 		
 			<div id="header">
 				
 				<div id="title">
-					<h1>House Hunting All Day, Every Day</h1>
-					<p id="subtitle">Most people search for homes on Mondays at 9:00 PM. When are you window shopping?</p>
+					<p class="about"><strong>DENSITY</strong> estimates how full study spaces are on campus, using a live feed of Wi-Fi access data that updates every 15 minutes.</p>
 				</div>
 			</div>
 			<div id="old_browser_msg">We're sorry but your browser is really old and can't handle the full interactive experience. We recommend you upgrade to the latest version as soon as possible.</div>
@@ -58,7 +64,6 @@
 			</div>
 			
 			<div id="vis"></div>
-			<div id="poweredby" class="old_browsers"><a href="http://trulia.com">Powered by Trulia</a></div>
 			<div id="states_nav">
 			
 				<div class="controls">
@@ -68,7 +73,7 @@
 						<input type="radio" id="type_spring" name="type" value="spring"/><label for="type_spring"><span class="spring">Spring</span></label>
 					</fieldset>
 					<fieldset id="state">
-						<input type="radio" id="state_all" name="state" value="all" checked="checked"/><label id="state_all_label" for="state_all" class="sel"><span class="all">All States</span></label>
+						<input type="radio" id="state_all" name="state" value="all" checked="checked"/><label id="state_all_label" for="state_all" class="sel"><span class="all">All Libraries</span></label>
 					</fieldset>
 				</div>
 				<div id="map"></div>
@@ -79,8 +84,7 @@
 			</ul>
 			
 			<div id="wtf">
-				<div id="poweredby"><a href="http://trulia.com">Powered by Trulia</a></div>
-				<h2>All States</h2>
+				<h2>All Libraries</h2>
 				<div id="pc2mob">
 					<div class="svg"></div>
 					<ul>
