@@ -15,6 +15,21 @@ def get_building_info():
   print "building info retrived"
   return building_info
 
+def get_building_parent():
+  url = 'http://density.adicu.com/docs/building_info'
+
+  resp = requests.get(url=url)
+  data = json.loads(resp.text)
+
+  building_parent = dict()
+  for i in xrange(0, len(data["data"])):
+    try:
+      building_parent[data["data"][i]["parent_name"]].append(data["data"][i]["group_name"])
+    except KeyError:
+      building_parent[data["data"][i]["parent_name"]]=[data["data"][i]["group_name"]]
+  print "building parents retrived"
+  return building_parent
+  
 def get_json_url(start_date, start_hour, end_data, end_hour, group_id):
   base_url = "http://density.adicu.com/window/%sT%s/%sT%s/group/%d?auth_token=9O4CRZLWI0OFZII4S4HYZNC60OZIZ3CB"
 
