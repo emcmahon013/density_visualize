@@ -34,6 +34,7 @@
 	float: left;
 	width: 10px;
 	clear: left;
+	border: 0px solid;
 }
 
 #controls button {
@@ -256,27 +257,27 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 	stroke-width: 2px;
 }
 
-#pc2mob.all path.pc {
+#pc2mob.all path.fall {
 	fill: #ddd;
 }
 
-#pc2mob.all path.mob {
+#pc2mob.all path.spring {
 	fill: #ccc;
 }
 
-#pc2mob.pc path.pc {
+#pc2mob.pc path.fall {
 	fill: #444;
 }
 
-#pc2mob.pc path.mob {
+#pc2mob.pc path.spring {
 	fill: #ddd;
 }
 
-#pc2mob.mob path.pc {
+#pc2mob.mob path.fall {
 	fill: #ddd;
 }
 
-#pc2mob.mob path.mob {
+#pc2mob.mob path.spring {
 	fill: #444;
 }
 
