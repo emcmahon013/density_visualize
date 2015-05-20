@@ -239,6 +239,7 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 	width: 515px;
 	text-align:right;
 	margin-left:5px;
+	border: 0px solid;
 }
 
 
@@ -265,19 +266,19 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 	fill: #ccc;
 }
 
-#pc2mob.pc path.fall {
+#pc2mob.fall path.fall {
 	fill: #444;
 }
 
-#pc2mob.pc path.spring {
+#pc2mob.fall path.spring {
 	fill: #ddd;
 }
 
-#pc2mob.mob path.fall {
+#pc2mob.spring path.fall {
 	fill: #ddd;
 }
 
-#pc2mob.mob path.spring {
+#pc2mob.spring path.spring {
 	fill: #444;
 }
 
@@ -299,27 +300,27 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 	line-height: 24px;
 }
 
-#pc2mob.all li.pc, #ie8_percents li.pc {
+#pc2mob.all li.fall, #ie8_percents li.fall {
 	color: #ccc;
 }
 
-#pc2mob.all li.mob, #ie8_percents li.mob {
+#pc2mob.all li.spring, #ie8_percents li.spring {
 	color: #aaa;
 }
 
-#pc2mob.pc li.pc {
+#pc2mob.fall li.fall {
 	color: #444;
 }
 
-#pc2mob.pc li.mob {
+#pc2mob.fall li.spring {
 	color: #999;
 }
 
-#pc2mob.mob li.pc {
+#pc2mob.spring li.fall {
 	color: #999;
 }
 
-#pc2mob.mob li.mob {
+#pc2mob.spring li.spring {
 	color: #444;
 }
 
@@ -436,7 +437,7 @@ h2 {
 	line-height: 28px;
 	margin-bottom: 30px;
 	width: 250px;
-	margin-left: -50px;
+	margin-left: -60px;
 	z-index: -1337;
 	text-align: center;
 }
@@ -454,9 +455,6 @@ p.subtitle {
 	margin-bottom: 0;
 }
 
-#truliaBar a {
-	width: 895px !important; 
-}
 
 html.ie8 #vis, html.ie9 #vis {
 	height: 285px !important;
