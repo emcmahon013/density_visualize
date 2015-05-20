@@ -476,7 +476,7 @@ function drawMobilePie(state) {
 	
 	arcs.append('svg:path')
 		.attr('d', arc)
-		.attr('class', function(d, i) { return i === 0 ? 'fall' : 'spring' });
+		.attr('class', function(d, i) { return i === 0 ? 'spring' : 'fall' });
 	
 	var rawMobPercent = 100 / (data[state].pc2mob + 1);
 	
