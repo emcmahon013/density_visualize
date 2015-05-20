@@ -182,7 +182,7 @@ d3.json('data.json', function(json) {
 		reColorTiles('all', type);
 		drawMobilePie('all');
 		
-		d3.select('#wtf h2').html('All Buildings');
+		d3.select('#wtf h2').html('All Libraries');
 	});
 	
 	/* ************************** */
@@ -488,8 +488,8 @@ function drawMobilePie(state) {
 			pcPercent = 100 - mobPercent;
 	}
 	
-	d3.select('#pc2mob .pc span').html(pcPercent + '%');
-	d3.select('#pc2mob .mob span').html(mobPercent + '%');
+	d3.select('#pc2mob .fall span').html(pcPercent + '%');
+	d3.select('#pc2mob .spring span').html(mobPercent + '%');
 	
 	var html = d3.select('#pc2mob ul').html();
 	d3.select('#ie8_percents').html(html);
