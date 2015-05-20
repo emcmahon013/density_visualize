@@ -104,7 +104,7 @@ addStateButtons();
 
 d3.select('#vis').classed(colorScheme, true);
 
-d3.json('sep.json', function(json) {
+d3.json('data.json', function(json) {
 	
 	data = json;
 
