@@ -509,8 +509,8 @@ function updateIE8percents(state) {
 			pcPercent = 100 - mobPercent;
 	}
 	
-	// d3.select('#pc2mob .fall span').html(pcPercent + '%');
-	// d3.select('#pc2mob .spring span').html(mobPercent + '%');
+	d3.select('#pc2mob .fall span').html(pcPercent + '%');
+	d3.select('#pc2mob .spring span').html(mobPercent + '%');
 	
 	var html = d3.select('#pc2mob ul').html();
 	d3.select('#ie8_percents').html(html);
