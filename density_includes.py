@@ -51,7 +51,7 @@ def daterange(start_date, end_date):
   for n in range(int ((end_date - start_date).days)):
     yield start_date + datetime.timedelta(n)
 
-def write_to_json(all_normalized_density, result, fall2spring, allfall2spring, building_list):
+def write_to_json(all_normalized_density, parent_normalized_density, result, fall2spring, parent_fall2spring, allfall2spring, building_list):
   f = open('data.json', 'w+')
   f.write('{')
   
@@ -76,6 +76,30 @@ def write_to_json(all_normalized_density, result, fall2spring, allfall2spring, b
   f.write('\n\t\t]')
   f.write('\n\t}')
 
+  for parent in parent_normalized_density:
+    f.write(',')
+    f.write('\n\t"'+str(parent_fall2spring[parent][0]) +'":{')
+    f.write('\n\t\t"pc2mob": '+str(parent_fall2spring[parent][1])+',')
+    f.write('\n\t\t"views": [')
+
+    rows, colomns, index =  np.shape(parent_normalized_density[parent])
+    for i in xrange(0, rows):
+      if (i!=0):
+        f.write(',')
+      f.write('\n\t\t\t[')
+      for j in xrange(0, colomns):
+        if (j!=0):
+          f.write(',')
+        f.write('\n\t\t\t\t{')
+        f.write('\n\t\t\t\t\t"fall": ' + str(parent_normalized_density[parent][i][j][0]) + ',')
+        f.write('\n\t\t\t\t\t"spring": ' + str(parent_normalized_density[parent][i][j][1]))
+        f.write('\n\t\t\t\t}')
+
+      f.write('\n\t\t\t]')
+      
+    f.write('\n\t\t]')
+    f.write('\n\t}')
+
 
   for buliding_info, library, ratio in zip(building_list, result, fall2spring):
     print buliding_info
@@ -98,8 +122,6 @@ def write_to_json(all_normalized_density, result, fall2spring, allfall2spring, b
         f.write('\n\t\t\t\t}')
 
       f.write('\n\t\t\t]')
-
-
 
     f.write('\n\t\t]')
     f.write('\n\t}')
