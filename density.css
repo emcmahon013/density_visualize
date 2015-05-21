@@ -183,6 +183,12 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 		fill: #999;
 		cursor: pointer;
 	}
+
+	#map path.low:hover {
+		fill: #ddd;
+		stroke: white;
+		cursor: pointer;
+	}
 	
 	#map path.state.sel {
 		fill: #444;
