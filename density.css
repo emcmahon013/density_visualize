@@ -54,6 +54,12 @@ fieldset#state.ff3 label {
 	display: block !important;
 }
 
+fieldset#state {
+	margin-right: 10px;
+	float: left;
+	border: 0px solid;
+}
+
 fieldset#type {
 	margin-right: 10px;
 	float: left;
