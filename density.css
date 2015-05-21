@@ -28,6 +28,7 @@
 
 #controls fieldset {
 	width: 250px;
+	border: 0px solid;
 }
 
 #controls span {
@@ -56,6 +57,7 @@ fieldset#state.ff3 label {
 fieldset#type {
 	margin-right: 10px;
 	float: left;
+	border: 0px solid;
 }
 
 #state_all_label {
@@ -368,7 +370,6 @@ th.h7, th.h8, th.h9, th.h10, th.h11, th.h12, th.h13, th.h14, th.h15, th.h16, th.
 	margin: 0 0 20px 7px;
 	font-size: 12px;
 	line-height: 12px;
-	border: 0px solid;
 }
 
 .controls input {
