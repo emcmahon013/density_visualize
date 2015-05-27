@@ -26,18 +26,18 @@
 	</g>
 	<g id="avery">
 			<path id="avery" fill="None" stroke="#F8725D" stroke-width="2" d="M420 148 V 200 H 442 V 148 Z"/>
-			<path id="avery1" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M420 148 V 200 H 433 V 148 Z"/>
-			<path id="avery2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M433 148 V 200 H 438 V 148 Z"/>
-			<path id="avery2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M438 148 V 200 H 442 V 148 Z"/>
+			<path id="avery1" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M422 150 V 198 H 430 V 150 Z"/>
+			<path id="avery2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M430 150 V 198 H 435 V 150 Z"/>
+			<path id="avery2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M435 150 V 198 H 440 V 150 Z"/>
 	</g>
 	<g id="butler">
 			<path id="butler" fill="None" stroke="#F8725D" stroke-width="2" d="M 320 500 V 445 H 340 V 440 H 387 V 445 H 405 V 500Z"/>
 			<path id="butler1" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M320 445 H 365 V 475 H 320Z"/>
-			<path id="butler2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M365 445 H 405 V 475 H 365Z"/>
-			<path id="butler3" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M320 475 H 355 V 487 H 320Z"/>
-			<path id="butler4" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M375 475 H 405 V 487 H 375Z"/>
-			<path id="butler5" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M320 487 H 355 V 500 H 320Z"/>
-			<path id="butler6" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M375 487 H 405 V 500 H 375Z"/>
+			<path id="butler2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M365 447 H 403 V 475 H 365Z"/>
+			<path id="butler3" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M322 475 H 355 V 487 H 322Z"/>
+			<path id="butler4" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M375 475 H 403 V 487 H 375Z"/>
+			<path id="butler5" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M322 487 H 355 V 500 H 322Z"/>
+			<path id="butler6" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M375 487 H 403 V 500 H 375Z"/>
 			<path id="stacks" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M 355 500 V 475 H 375 V 500Z"/>
 	</g>	
 	<g id="kent">
@@ -45,17 +45,17 @@
 	</g>
 	<g id="johnjay">
 			<path id="john jay" fill='None' stroke="#F8725D" stroke-width="2" d="M420 500 V 472 H 445 V 469 H 465 V 472 H 490 V 500 H 475 V 495 H 435 V 500Z"/>
-			<path id="dining" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M420 487 V 472 H 445 V 487Z"/>
-			<path id="jjs" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M476 500 V 474 H 490 V 500Z"/>
+			<path id="dining" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M422 487 V 474 H 445 V 487Z"/>
+			<path id="jjs" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M476 498 V 474 H 488 V 498Z"/>
 	</g>
 	<g id="lerner">
 			<path id="lerner" fill='None' stroke="#F8725D" stroke-width="2" d="M240 475 V 430 H 305 V 470 H 307 V 475 Z"/>
-			<path id="roone" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M240 475 V 455 H 285 V 475Z"/>
-			<path id="lerner1" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M307 455 V 430 H 295 V 455Z"/>
-			<path id="lerner2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M295 455 V 430 H 283 V 455Z"/>
-			<path id="lerner3" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M283 455 V 430 H 271 V 455Z"/>
-			<path id="lerner4" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M271 455 V 430 H 259 V 455Z"/>
-			<path id="lerner5" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M259 455 V 430 H 247 V 455Z"/>
+			<path id="roone" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M242 473 V 455 H 285 V 473Z"/>
+			<path id="lerner1" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M303 455 V 432 H 295 V 455Z"/>
+			<path id="lerner2" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M295 455 V 432 H 283 V 455Z"/>
+			<path id="lerner3" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M283 455 V 432 H 271 V 455Z"/>
+			<path id="lerner4" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M271 455 V 432 H 259 V 455Z"/>
+			<path id="lerner5" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M259 455 V 432 H 247 V 455Z"/>
 	</g>
 	<g id="SIPA">
 			<path id="SIPA" fill='None' stroke="#F8725D" stroke-width="2" d="M525 170 V 190 H 550 V 195 H 575 V 190 H 600 V 170 Z"/>
