@@ -38,7 +38,7 @@
 			<path id="butler4" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M375 475 H 402 V 487 H 375Z"/>
 			<path id="butler5" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M323 487 H 355 V 497 H 323Z"/>
 			<path id="butler6" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M375 487 H 402 V 497 H 375Z"/>
-			<path id="stacks" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M 355 500 V 475 H 375 V 500Z"/>
+			<path id="stacks" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M 355 497 V 475 H 375 V 497Z"/>
 	</g>	
 	<g id="kent">
 			<path id="starr" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M420 295 V 315 H 490 V 295 H 465 V 290 H 445 V 295Z"/>
@@ -46,7 +46,7 @@
 	<g id="johnjay">
 			<path id="john jay" fill='None' stroke="#F8725D" stroke-width="2" d="M420 500 V 472 H 445 V 469 H 465 V 472 H 490 V 500 H 475 V 495 H 435 V 500Z"/>
 			<path id="dining" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M423 487 V 475 H 445 V 487Z"/>
-			<path id="jjs" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M476 497 V 475 H 487 V 497Z"/>
+			<path id="jjs" fill="#DDDDDD" stroke="#F8725D" stroke-width="2" d="M478 497 V 475 H 487 V 497Z"/>
 	</g>
 	<g id="lerner">
 			<path id="lerner" fill='None' stroke="#F8725D" stroke-width="2" d="M240 475 V 430 H 305 V 470 H 307 V 475 Z"/>
